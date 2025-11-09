@@ -39,7 +39,7 @@ An event-driven serverless application for automatic image compression with emai
 ### Deployment
 ```bash
 # 1. Clone the repository
-git clone <https://github.com/HamzaTariq-2004/serverless-image-compressor>
+git clone https://github.com/HamzaTariq-2004/serverless-image-compressor
 cd serverless-image-compressor
 
 # 2. Update configuration

@@ -1,0 +1,32 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Explicitly declare text files
+*.tf text
+*.py text
+*.js text
+*.css text
+*.html text
+*.md text
+*.json text
+*.yml text
+*.yaml text
+*.sh text eol=lf
+
+# Declare files that will always have CRLF line endings on checkout
+*.bat text eol=crlf
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary

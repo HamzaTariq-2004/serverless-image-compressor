@@ -1,0 +1,313 @@
+# ============================================
+# AWS Serverless Image Compressor - .gitignore
+# ============================================
+
+# ============================================
+# Terraform
+# ============================================
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files contain sensitive data and infrastructure state
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which might contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file (optional - some teams commit this, some don't)
+# Uncomment if you want to ignore it
+# .terraform.lock.hcl
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform plan output files
+*.tfplan
+
+# ============================================
+# Python
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# ============================================
+# Lambda Deployment Packages
+# ============================================
+# Lambda function ZIP files
+*.zip
+!layer/pillow-layer.zip  # Keep the Pillow layer if pre-built
+
+# Temporary Lambda build directories
+lambda-build/
+lambda-package/
+
+# ============================================
+# AWS Credentials & Config
+# ============================================
+# Never commit AWS credentials!
+.aws/
+credentials
+config
+*.pem
+*.key
+*.cert
+
+# AWS SAM
+.aws-sam/
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+.envrc
+
+# Secrets
+secrets.json
+secrets.yml
+secrets.yaml
+*.secret
+
+# ============================================
+# Frontend / Node.js (if you add build tools later)
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================
+# IDEs and Editors
+# ============================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# Test Files & Temporary Data
+# ============================================
+# Test images and uploads
+test-images/
+test-uploads/
+temp/
+tmp/
+*.tmp
+
+# Sample/test data
+sample_*.jpg
+sample_*.png
+test_*.jpg
+test_*.png
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.log.*
+
+# CloudWatch logs (if downloaded)
+cloudwatch-logs/
+
+# ============================================
+# Backup Files
+# ============================================
+*.bak
+*.backup
+*.old
+*-backup
+*-old
+
+# ============================================
+# Documentation Build
+# ============================================
+docs/_build/
+site/
+
+# ============================================
+# Project Specific
+# ============================================
+# Architecture diagrams (source files)
+*.drawio.bkp
+*.drawio~
+
+# Local configuration
+local.tfvars
+dev.tfvars
+
+# SendGrid API keys (if stored locally)
+sendgrid.key
+api_keys.txt
+
+# ============================================
+# Compression Testing
+# ============================================
+# Don't commit test compressed images
+*_compressed.*
+compressed/
+
+# ============================================
+# CI/CD
+# ============================================
+.github/workflows/*.secrets
+
+# ============================================
+# Miscellaneous
+# ============================================
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
